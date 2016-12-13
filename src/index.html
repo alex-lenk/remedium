@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Сиалекс</title>
+    <title>Remedium - performance marketing agency</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,27 +10,33 @@
     <link rel="stylesheet" href="css/lib.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#e32323">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
 <header>
     <div class="container">
         <div class="top-panel">
             <img src="img/logo.png" alt="" class="logo">
 
-            <div class="phone text-bold">8 (495) 777 22 22</div>
+            <ul class="support">
+                <li class="text-bold"> 8 (960) 595 35 66<!--8 (495) 777 22 22--></li>
+                <li>info@remedium.pro</li>
+            </ul>
 
-            <div class="email">info@remedium.pro</div>
-
-            <button class="order"><span>Отправить заявку</span></button>
+            <a href="#application-services" class="button order"><span>Отправить заявку</span></a>
         </div>
 
-        <div class="header-text-blocs">
-            <div class="text">А Вы знали, что</div>
-            <div class="text-2">7/10</div>
-            <div class="text-3">рекламных компаний</div>
-            <div class="text-4">неэффективны</div>
-        </div>
+        <ul class="header-text-blocs">
+            <li class="text">А Вы знали, что</li>
+            <li class="text-2 text-bold">7/10</li>
+            <li class="text-3">рекламных компаний</li>
+            <li class="text-4 text-bold">неэффективны</li>
+        </ul>
 
         <div class="statistics">
             <ul>
@@ -98,10 +104,93 @@
         <ul class="services-list text-bold">
             <li><span>медийная <br> реклама</span></li>
             <li><span>контекстная <br> реклама</span></li>
-            <li><span>CRA</span></li>
+            <li><span>СРА/СРL</span></li>
+        </ul>
+
+        <h2 class="section-block__title services-title">принцип работы</h2>
+
+        <ul class="services-description">
+            <li>
+                <div class="intro text-bold">Десятки крупных клиентов</div>
+                <div class="text">Мы внимательно изучаем потребности наших клиентов и оказываем только те услуги,
+                    которые принесут
+                    реальную пользу вашму бизнесу. А еще мы не гонимся за количеством - мы работаем исключительно на
+                    качество. И гордимся этим.
+                </div>
+            </li>
+            <li class="center-block">
+                <div class="intro text-bold">Индивидуальный подход к каждому клиенту</div>
+                <div class="text">Каждый клиент для нас индивидуален и не похож на других, именно поэтому, прежде
+                    чем предложить решение, мы внимательно изучаем ваш бизнес, анализируесм статистику, выявляем
+                    потребности вашего бизнеса. И только потом мы предлагаем решение которое даст вам результат.
+                </div>
+            </li>
+            <li>
+                <div class="intro text-bold">Полное погружение в проект и бизнес клиента</div>
+                <div class="text">Наши специалисты и аналитики на 100% погружаются в ваш проект, становясь единым
+                    целым с вашим бизнесом.
+                </div>
+            </li>
         </ul>
     </div>
 </section>
+
+<section class="section-block clients">
+    <div class="container">
+        <h2 class="section-block__title">клиенты</h2>
+
+        <ul class="clients-logo">
+            <li><img src="img/partner-logo.jpg" alt=""></li>
+            <li><img src="img/partner-logo-2.png" alt=""></li>
+            <li><img src="img/partner-logo-3.jpg" alt=""></li>
+        </ul>
+    </div>
+</section>
+
+<div class="section-block" id="application-services">
+    <div class="container">
+        <h2 class="section-block__title application-services-title">заявка на услуги</h2>
+
+        <p class="text-bold">Укажите свои координаты и мы обязательно с Вами свяжемся</p>
+
+        <form action="#" class="feedback-form">
+            <div class="form-group">
+                <input type="text" id="surname" class="form-control hide-placeholder" placeholder="Ваше имя">
+                <label class="form-label" for="surname">Ваше имя</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="phone-number" class="form-control hide-placeholder" placeholder="Телефон">
+                <label class="form-label" for="phone-number">Телефон</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="web-site" class="form-control hide-placeholder" placeholder="Сайт">
+                <label class="form-label" for="web-site">Сайт</label>
+            </div>
+
+            <div class="form-group">
+                <textarea id="feedback-message" class="form-control hide-placeholder" rows="2" placeholder="Ваш вопрос нашим специалистам"></textarea>
+                <label class="form-label" for="feedback-message">Ваш вопрос нашим специалистам</label>
+            </div>
+
+            <button class="button order"><span>Отправить заявку</span></button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container footer">
+        <img src="img/logo-footer.png" alt="" class="logo">
+
+        <div class="copy">© 2015 - 2016 <span class="text-bold">Remedium</span></div>
+
+        <div class="support">
+            <div class="phone text-bold"> 8 (960) 595 35 66<!--8 (495) 777 22 22--></div>
+            <div class="email">info@remedium.pro</div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/jquery.js"></script>
 <script src="js/scripts.js"></script>

@@ -100,7 +100,10 @@ gulp.task('style:build', function () {
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(autoprefixer()) //Добавим вендорные префиксы
+        .pipe(autoprefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        })) //Добавим вендорные префиксы
         .pipe(cleanCSS({debug: true}, function (details) {
         }))
         .pipe(sourcemaps.write(path.build.maps, {
