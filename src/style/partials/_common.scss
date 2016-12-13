@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.otf') format('opentype'),
+  url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype'), url('../fonts/GothamPro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold.otf') format('opentype'),
+  url('../fonts/GothamPro-Bold.woff') format('woff'), url('../fonts/GothamPro-Bold.ttf') format('truetype'), url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin GothamRegular() {
+  font-family: 'GothamPro', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin GothamBold() {
+  font-family: 'GothamPro-Bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.42857143;
+  color: #252524;
+  font-size: 18px;
+  background: #fff;
+  @include GothamRegular;
+}
+
+a {
+  color: #0dbae8;
+  text-decoration: none;
+  &:hover, a:focus {
+    color: #0980a0;
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-bold {
+    @include GothamBold;
+  }
+}
+
+b, strong {
+  @include GothamBold;
+}
+
+.form {
+  &-label {
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    position: absolute;
+    top: 28px;
+    left: 30%;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    transition: all ease-in-out .5s;
+  }
+  &-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  &-control {
+    &:focus {
+      outline: 0;
+      & + .form-label {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+        left: 45%;
+        padding: 1px 2px;
+        color: #ccc;
+      }
+    }
+    &::-webkit-input-placeholder {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &::-moz-placeholder {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &:-moz-placeholder {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus::-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus:-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
