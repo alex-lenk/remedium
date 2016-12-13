@@ -218,7 +218,7 @@ header {
     li {
       outline: 1px solid #000;
       text-transform: uppercase;
-      @include to('xs') {
+      @include from('xs') {
         width: 247px;
       }
       span {
@@ -346,8 +346,10 @@ header {
 
 .feedback-form {
   width: 100%;
-  max-width: 340px;
   margin: 0 auto;
+  @include from('s') {
+    max-width: 340px;
+  }
   .button {
     width: 100%;
     span {
@@ -360,14 +362,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 50px 0;
+  text-align: center;
   @include to('s') {
     flex-direction: column;
     align-items: center;
-    .copy {
-      order: 3;
-    }
-    .support {
+    .company {
       margin: 30px 0;
     }
   }
@@ -376,12 +377,46 @@ header {
       text-align: right;
     }
   }
+  .as-link {
+    color: #252524;
+    border-bottom-color: #d5d5d5;
+  }
 }
 
+.after-footer {
+  padding-top: 50px;
+  flex-basis: 100%;
+  @include from('s') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+#modal-order {
+  .close {
+    color: #fff;
+    opacity: .8;
+  }
+  .feedback-form {
+    background: url(../img/bg-order.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    .form-control {
+      padding-left: 10px;
+    }
+  }
+  .form-label {
+    left: 4%;
+    white-space: nowrap;
+  }
+}
 
-
-
-
-
-
+@include to('s') {
+  .modal-title {
+    font-size: 20px;
+  }
+  .modal-body {
+    font-size: 16px;
+  }
+}

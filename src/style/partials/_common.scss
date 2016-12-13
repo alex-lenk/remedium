@@ -34,14 +34,28 @@ body {
   @include GothamRegular;
 }
 
-a {
-  color: #0dbae8;
-  text-decoration: none;
-  &:hover, a:focus {
-    color: #0980a0;
-    text-decoration: underline;
+.as-link {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: inline;
+  cursor: pointer;
+  &:focus {
+    outline: none;
   }
 }
+
+a, .as-link {
+  color: #cb2e26;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  &:hover, a:focus {
+    color: #cb4345;
+    border-bottom-color: transparent;
+  }
+}
+
 
 img {
   max-width: 100%
@@ -69,6 +83,13 @@ img {
   }
   &-bold {
     @include GothamBold;
+  }
+  &-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
   }
 }
 
@@ -196,6 +217,9 @@ textarea.form-control {
   position: relative;
   cursor: pointer;
   @include GothamBold;
+  &:focus {
+    outline: none;
+  }
   span {
     padding: 10px 6px;
     width: 100%;
@@ -212,5 +236,3 @@ textarea.form-control {
     }
   }
 }
-
-

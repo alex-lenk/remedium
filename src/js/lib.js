@@ -1,1 +1,1 @@
-// = lib/timer.js
+//= lib/bootstrap.min.js
