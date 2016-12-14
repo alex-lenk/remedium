@@ -18,4 +18,27 @@ $(document).ready(function () {
         $('html,body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 1000);
         e.preventDefault();
     });
+
+    // Yep, that's it!
+    $('#scene').parallax();
+
+
+    //@TODO delete
+/*    $('.timer').countTo({
+        speed: 4000,
+        refreshInterval: 60,
+        formatter: function (value, options) {
+            return value.toFixed(options.decimals);
+        }
+    });*/
+
+    $('.statistic').appear(function() {
+        $('.timer').countTo({
+            speed: 4000,
+            refreshInterval: 60,
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals);
+            }
+        });
+    });
 });
