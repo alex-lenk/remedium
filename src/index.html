@@ -18,177 +18,179 @@
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#e32323">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body id="scene">
-<header class="statistic">
-    <div class="container">
-        <div class="top-panel">
-            <img src="img/logo.png" alt="" class="logo">
+<body>
+<div id="scene">
+    <header class="statistic">
+        <div class="container">
+            <div class="top-panel">
+                <img src="img/logo.png" alt="Remedium" class="logo">
 
-            <ul class="support">
-                <li class="text-bold"> 8 (960) 595 35 66<!--8 (495) 777 22 22--></li>
-                <li>info@remedium.pro</li>
+                <ul class="support">
+                    <li class="text-bold"> 8 (960) 595 35 66</li>
+                    <li>info@remedium.pro</li>
+                </ul>
+
+                <button class="button order" data-toggle="modal" data-target="#modal-order">
+                    <span class="button-text">Отправить заявку</span>
+                </button>
+            </div>
+
+            <ul class="header-text-blocs">
+                <li class="text">А Вы знали, что</li>
+                <li class="text-2 text-bold"><span class="timer" data-from="3" data-to="7">7</span>/<span class="timer" data-from="5" data-to="10">10</span></li>
+                <li class="text-3">рекламных кампаний</li>
+                <li class="text-4 text-bold">неэффективны</li>
             </ul>
 
-            <button class="button order" data-toggle="modal" data-target="#modal-order">
-                <span>Отправить заявку</span>
-            </button>
+            <div class="statistics">
+                <ul>
+                    <li class="number"><span class="text-bold timer" data-from="28" data-to="68">68</span></li>
+                    <li>
+                        <div class="text-bold info">запросов</div>
+                        <span class="text-reg">в контекстной рекламе</span>
+                    </li>
+                </ul>
+
+                <ul class="statistics-seo">
+                    <li class="number text-bold">
+                        <span class="timer" data-from="10" data-to="43">43</span><sup>%</sup>
+                    </li>
+                    <li>
+                        <div class="text-bold info">в SEO</div>
+                        <span class="text-reg">не приводят к продажам</span>
+                    </li>
+                </ul>
+
+                <ul class="statistics-budget">
+                    <li class="number text-bold">
+                        Более <span class="timer" data-from="20" data-to="50">50</span><sup>%</sup>
+                    </li>
+                    <li>
+                        <div class="text-bold info">рекламных бюджетов</div>
+                        <span class="text-reg">расходуются неэффективно</span>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <span class="bg layer" data-depth="0.02"></span>
+    </header>
 
-        <ul class="header-text-blocs">
-            <li class="text">А Вы знали, что</li>
-            <li class="text-2 text-bold"><span class="timer" data-from="3" data-to="7">7</span>/<span class="timer" data-from="5" data-to="10">10</span></li>
-            <li class="text-3">рекламных кампаний</li>
-            <li class="text-4 text-bold">неэффективны</li>
-        </ul>
+    <section class="section-block who-we">
+        <div class="container">
+            <h2 class="section-block__title">Кто мы</h2>
+            <p class="text-bold">Мы команда профессионалов с большим опытом в digital. Наш основной принцип - работа на
+                результат и увеличение числа продаж у наших клиентов.</p>
+        </div>
+    </section>
 
-        <div class="statistics">
-            <ul>
-                <li class="number"><span class="text-bold timer" data-from="28" data-to="68">68</span></li>
+    <section class="statistic section-block about-us">
+        <div class="container">
+            <h2 class="section-block__title">о нас в цифрах</h2>
+            <ul class="about-us__numbers">
                 <li>
-                    <div class="text-bold info">запросов</div>
-                    <span class="text-reg">в контекстной рекламе</span>
-                </li>
-            </ul>
-
-            <ul class="statistics-seo">
-                <li class="number text-bold">
-                    <span class="timer" data-from="10" data-to="43">43</span><sup>%</sup>
+                    <div class="number text-bold timer" data-from="12000" data-to="12573">12 573</div>
+                    <div>рекламных кампаний проведено</div>
                 </li>
                 <li>
-                    <div class="text-bold info">в SEO</div>
-                    <span class="text-reg">не приводят к продажам</span>
-                </li>
-            </ul>
-
-            <ul class="statistics-budget">
-                <li class="number text-bold">
-                    Более <span class="timer" data-from="20" data-to="50">50</span><sup>%</sup>
+                    <div class="number text-bold timer" data-from="92920103" data-to="92923103">92 923 103</div>
+                    <div>клиентов из интернета привлечено</div>
                 </li>
                 <li>
-                    <div class="text-bold info">рекламных бюджетов</div>
-                    <span class="text-reg">расходуются неэффективно</span>
+                    <div class="number text-bold timer" data-from="26734000" data-to="26734802">26 734 802</div>
+                    <div>продаж сгенерировано на сумму <span class="timer" data-from="66837000000" data-to="66837005000">66 837 005 000</span> руб</div>
                 </li>
             </ul>
         </div>
-    </div>
-    <span class="bg layer" data-depth="0.10"></span>
-</header>
+        <span class="bg layer" data-depth="0.10"></span>
+    </section>
 
-<section class="section-block who-we">
-    <div class="container">
-        <h2 class="section-block__title">Кто мы</h2>
-        <p class="text-bold">Мы команда профессионалов с большим опытом в digital. Наш основной принцип - работа на
-            результат и увеличение числа продаж у наших клиентов.</p>
-    </div>
-</section>
+    <section class="section-block services">
+        <div class="container">
+            <h2 class="section-block__title">услуги</h2>
+            <ul class="services-list text-bold">
+                <li><span>медийная <br> реклама</span></li>
+                <li><span>контекстная <br> реклама</span></li>
+                <li><span>СРА/СРL</span></li>
+            </ul>
 
-<section class="statistic section-block about-us">
-    <div class="container">
-        <h2 class="section-block__title">о нас в цифрах</h2>
-        <ul class="about-us__numbers">
-            <li>
-                <div class="number text-bold timer" data-from="12000" data-to="12573">12 573</div>
-                <div>рекламных кампаний проведено</div>
-            </li>
-            <li>
-                <div class="number text-bold timer" data-from="92920103" data-to="92923103">92 923 103</div>
-                <div>клиентов из интернета привлечено</div>
-            </li>
-            <li>
-                <div class="number text-bold timer" data-from="26734000" data-to="26734802">26 734 802</div>
-                <div>продаж сгенерировано на сумму <span class="timer" data-from="66837000000" data-to="66837005000">66 837 005 000</span> руб</div>
-            </li>
-        </ul>
-    </div>
-    <span class="bg layer" data-depth="0.10"></span>
-</section>
+            <h2 class="section-block__title services-title">принцип работы</h2>
 
-<section class="section-block services">
-    <div class="container">
-        <h2 class="section-block__title">услуги</h2>
-        <ul class="services-list text-bold">
-            <li><span>медийная <br> реклама</span></li>
-            <li><span>контекстная <br> реклама</span></li>
-            <li><span>СРА/СРL</span></li>
-        </ul>
+            <ul class="services-description">
+                <li>
+                    <div class="intro text-bold">Десятки крупных клиентов</div>
+                    <div class="text">Мы внимательно изучаем потребности наших клиентов и оказываем только те услуги,
+                        которые принесут
+                        реальную пользу вашму бизнесу. А еще мы не гонимся за количеством - мы работаем исключительно на
+                        качество. И гордимся этим.
+                    </div>
+                </li>
+                <li class="center-block">
+                    <div class="intro text-bold">Индивидуальный подход к каждому клиенту</div>
+                    <div class="text">Каждый клиент для нас индивидуален и не похож на других, именно поэтому, прежде
+                        чем предложить решение, мы внимательно изучаем ваш бизнес, анализируесм статистику, выявляем
+                        потребности вашего бизнеса. И только потом мы предлагаем решение которое даст вам результат.
+                    </div>
+                </li>
+                <li>
+                    <div class="intro text-bold">Полное погружение в проект и бизнес клиента</div>
+                    <div class="text">Наши специалисты и аналитики на 100% погружаются в ваш проект, становясь единым
+                        целым с вашим бизнесом.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <h2 class="section-block__title services-title">принцип работы</h2>
+    <section class="section-block clients">
+        <div class="container">
+            <h2 class="section-block__title">клиенты</h2>
 
-        <ul class="services-description">
-            <li>
-                <div class="intro text-bold">Десятки крупных клиентов</div>
-                <div class="text">Мы внимательно изучаем потребности наших клиентов и оказываем только те услуги,
-                    которые принесут
-                    реальную пользу вашму бизнесу. А еще мы не гонимся за количеством - мы работаем исключительно на
-                    качество. И гордимся этим.
+            <ul class="clients-logo">
+                <li><img src="img/partner-logo.jpg" alt=""></li>
+                <li><img src="img/partner-logo-2.png" alt=""></li>
+                <li><img src="img/partner-logo-3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="section-block" id="application-services">
+        <div class="container">
+            <h2 class="section-block__title application-services-title">заявка на услуги</h2>
+
+            <p class="text-bold">Укажите свои координаты и мы обязательно с Вами свяжемся</p>
+
+            <form action="#" class="feedback-form">
+                <div class="form-group">
+                    <input type="text" id="surname" class="form-control hide-placeholder" placeholder="Ваше имя">
+                    <label class="form-label" for="surname">Ваше имя</label>
                 </div>
-            </li>
-            <li class="center-block">
-                <div class="intro text-bold">Индивидуальный подход к каждому клиенту</div>
-                <div class="text">Каждый клиент для нас индивидуален и не похож на других, именно поэтому, прежде
-                    чем предложить решение, мы внимательно изучаем ваш бизнес, анализируесм статистику, выявляем
-                    потребности вашего бизнеса. И только потом мы предлагаем решение которое даст вам результат.
+
+                <div class="form-group">
+                    <input type="email" id="phone-number" class="form-control hide-placeholder" placeholder="Телефон">
+                    <label class="form-label" for="phone-number">Телефон</label>
                 </div>
-            </li>
-            <li>
-                <div class="intro text-bold">Полное погружение в проект и бизнес клиента</div>
-                <div class="text">Наши специалисты и аналитики на 100% погружаются в ваш проект, становясь единым
-                    целым с вашим бизнесом.
+
+                <div class="form-group">
+                    <input type="text" id="web-site" class="form-control hide-placeholder" placeholder="Сайт">
+                    <label class="form-label" for="web-site">Сайт</label>
                 </div>
-            </li>
-        </ul>
-    </div>
-</section>
 
-<section class="section-block clients">
-    <div class="container">
-        <h2 class="section-block__title">клиенты</h2>
-
-        <ul class="clients-logo">
-            <li><img src="img/partner-logo.jpg" alt=""></li>
-            <li><img src="img/partner-logo-2.png" alt=""></li>
-            <li><img src="img/partner-logo-3.jpg" alt=""></li>
-        </ul>
-    </div>
-</section>
-
-<div class="section-block" id="application-services">
-    <div class="container">
-        <h2 class="section-block__title application-services-title">заявка на услуги</h2>
-
-        <p class="text-bold">Укажите свои координаты и мы обязательно с Вами свяжемся</p>
-
-        <form action="#" class="feedback-form">
-            <div class="form-group">
-                <input type="text" id="surname" class="form-control hide-placeholder" placeholder="Ваше имя">
-                <label class="form-label" for="surname">Ваше имя</label>
-            </div>
-
-            <div class="form-group">
-                <input type="email" id="phone-number" class="form-control hide-placeholder" placeholder="Телефон">
-                <label class="form-label" for="phone-number">Телефон</label>
-            </div>
-
-            <div class="form-group">
-                <input type="text" id="web-site" class="form-control hide-placeholder" placeholder="Сайт">
-                <label class="form-label" for="web-site">Сайт</label>
-            </div>
-
-            <div class="form-group">
+                <div class="form-group">
                 <textarea id="feedback-message" class="form-control hide-placeholder" rows="2"
                           placeholder="Ваш вопрос нашим специалистам"></textarea>
-                <label class="form-label" for="feedback-message">Ваш вопрос нашим специалистам</label>
-            </div>
+                    <label class="form-label" for="feedback-message">Ваш вопрос нашим специалистам</label>
+                </div>
 
-            <button class="button order"><span>Отправить заявку</span></button>
-        </form>
+                <button class="button order"><span class="button-text">Отправить заявку</span></button>
+            </form>
+        </div>
+        <span class="bg layer" data-depth="0.05"></span>
     </div>
-    <span class="bg layer" data-depth="0.10"></span>
 </div>
 
 <footer>
     <div class="container footer">
-        <div class="logo"><img src="img/logo-footer.png" alt=""></div>
+        <div class="logo"><img src="img/logo-footer.png" alt="Remedium"></div>
 
         <div class="company">
             <span class="text-bold">ООО "АТЛОГ"</span> 123001, Москва,<br>
@@ -196,13 +198,13 @@
         </div>
 
         <div class="support">
-            <div class="phone text-bold"> 8 (960) 595 35 66<!--8 (495) 777 22 22--></div>
+            <div class="phone text-bold"> 8 (960) 595 35 66</div>
             <div class="email">info@remedium.pro</div>
         </div>
 
         <div class="after-footer">
             <div class="copy">© 2015 - <span id="current-year"></span> <span class="text-bold">Remedium</span></div>
-            <button class="privacy as-link" data-toggle="modal" data-target="#privacy">
+            <button class="privacy as-link" data-toggle="modal" data-target="#modal-privacy">
                 Политика конфиденциальности
             </button>
         </div>
@@ -218,8 +220,7 @@
     <div class="modal-dialog modal-sm" role="document">
         <form action="#" class="feedback-form modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 class="modal-title" id="myModalLabel2">Отправить заявку</h2>
             </div>
 
@@ -247,20 +248,20 @@
             </div>
 
             <div class="modal-footer">
-                <button class="button order"><span>Отправить заявку</span></button>
+                <button class="button order"><span class="button-text">Отправить заявку</span></button>
             </div>
         </form>
     </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modal-privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="myModalLabel">Политика конфиденциальности</h2>
+                <h2 class="modal-title" id="myModalLabel3">Политика конфиденциальности</h2>
             </div>
             <div class="modal-body">
                 <h3>Правила использования интернет–сайта</h3>
@@ -310,7 +311,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">закрыть</button>
+                <button type="button" class="button button-default" data-dismiss="modal">закрыть</button>
             </div>
         </div>
     </div>

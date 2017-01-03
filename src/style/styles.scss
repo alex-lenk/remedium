@@ -360,9 +360,8 @@ header {
 
 #application-services {
   color: #fff;
-  background: url("../img/bg-order.jpg") #28201e;
   .bg {
-    background: url("../img/bg-order.jpg");
+    background: url("../img/bg-order.jpg") #28201e;
   }
   &-title {
     margin-bottom: 40px;
