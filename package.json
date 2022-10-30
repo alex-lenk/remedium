@@ -18,7 +18,7 @@
   "homepage": "https://github.com/alex-lenk/2-sites#readme",
   "devDependencies": {
     "bower-installer": "^1.2.0",
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.27.10",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean-css": "^2.0.10",
